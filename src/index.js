@@ -5,21 +5,14 @@ const {
   GatewayIntentBits,
 } = require(`discord.js`);
 
+
 const client = new Client({
   intents: [
+    // Most of these are just the basic intents used
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMembers,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent,
-    GatewayIntentBits.GuildModeration,
-    GatewayIntentBits.GuildWebhooks,
-    GatewayIntentBits.GuildPresences,
-    GatewayIntentBits.GuildVoiceStates,
-    GatewayIntentBits.GuildMessageReactions,
-    GatewayIntentBits.GuildScheduledEvents,
-    GatewayIntentBits.GuildInvites,
-    GatewayIntentBits.DirectMessages,
-    GatewayIntentBits.DirectMessageReactions,
   ],
 });
 
